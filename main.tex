@@ -3,7 +3,7 @@
 
 %original template by https://github.com/snowtechblog/pico-latex-presentation by Anselm Köhler
 
-\documentclass[unknownkeysallowed,usepdftitle=false, parskip=full, aspectratio=1610]{beamer}
+\documentclass[unknownkeysallowed,usepdftitle=false, parskip=full, aspectratio=169]{beamer}
 % unknownkeysallowed is needed for mac and the newer latex version -> is more picky than before...
 \usetheme[headheight=1cm,footheight=2cm]{boxes}
 %\usetheme{default}
@@ -63,9 +63,9 @@
 \setbeamerfont{bodytext}{size=\scriptsize}
 	
 % Title setup	
-\title{The Hieroglyphics Initiative: Sharing YAML Files Made Easy}
+\title{The Hieroglyphics Initiative: Sharing Information Made Easy}
 \author{Bree Kelly (42849705)}
-\institute{Ancient History Department, Macquarie University, Sydney}
+% \institute{Ancient History Department, Macquarie University, Sydney}
 % add title in headbox
 \setbeamertemplate{headline}
 {\leavevmode
@@ -135,7 +135,7 @@
       \hyperlink{slab}{\beamerbutton{Section 4}}
     \tocbuttoncolor{minor}
     \hspace{\buttonspacingfootline}
-      \hyperlink{minor}{\beamerbutton{Section 5}}
+    %   \hyperlink{minor}{\beamerbutton{Section 5}}
     \tocbuttoncolor{conclusion}
     \hspace{\buttonspacingfootline}
       \hyperlink{conclusion}{\beamerbutton{Conclusion}}
@@ -156,19 +156,18 @@
 \end{beamercolorbox}%
 }
 
-
 \begin{document}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mysection{abstract}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}\label{\secvariable}
 
 \usebeamerfont{bodytext}
 
 \begin{center}
-\vspace{-0.5cm}
+\textbf{The Hieroglyphics Initiative} takes an image of hieroglyphic text and through a series of steps, suggests a translation.
 \includegraphics[width=1\textwidth,height=0.75\textheight,keepaspectratio]{figure/PICO_33.PNG}
 \end{center}
 \vfill
@@ -177,29 +176,37 @@
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}\label{\secvariable}
 
 \begin{center}
-%\vspace{-0.5cm}
+I developed a script that can extract the image files in someone else's project so you can use them.
 \vfill
-\includegraphics[width=1\textwidth,keepaspectratio]{figure/PICO_34.PNG}
+\includegraphics[width=0.85\textwidth,keepaspectratio]{figure/PICO_34.PNG}
 \end{center}
-\vfill
 \parbox{\linewidth}{\tiny Images provided by Alex Fry of Psycle
 \\Property of Ubisoft Hieroglyphics Initiative Workbench}
-
+\vfill
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mysection{radar}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}\label{\secvariable}
 
-\includegraphics[width=1\textwidth,keepaspectratio]{%
-figure/workbench_1.PNG}
+\begin{center}
+\textbf{The Hieroglyphics Initiative Workbench}
+\vspace{0.8cm}
+\includegraphics[width=0.85\textwidth,keepaspectratio]{figure/workbench_2.PNG}
+\end{center}
+\vspace*{-\baselineskip}
+\tiny Images provided by Alex Fry of Psycle
+\\Property of Ubisoft Hieroglyphics Initiative Workbench
 \vfill
-\parbox{\linewidth}{\tiny Images provided by Alex Fry of Psycle
-\\Property of Ubisoft Hieroglyphics Initiative Workbench}
 
 \end{frame}
 
@@ -210,11 +217,11 @@ figure/workbench_1.PNG}
 \begin{frame}\label{\secvariable}
 
 \begin{center}
-  \vspace{-0.5cm}
-
-\includegraphics[width=1\textwidth,keepaspectratio]{figure/PICO_36.png}
-\end{center}
+\vspace{0.05cm}
+\textbf{Auto-Classify Tool}: Can the program correctly identify the hieroglyphs?
 \vfill
+\includegraphics[width=0.85\textwidth,keepaspectratio]{figure/PICO_36.png}
+\end{center}
 \parbox{\linewidth}{\tiny Images provided by Alex Fry of Psycle
 \\Property of Ubisoft Hieroglyphics Initiative Workbench}
 
@@ -224,79 +231,38 @@ figure/workbench_1.PNG}
 \mysection{major}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}\label{\secvariable} %%Eine Folie
+\begin{frame}\label{\secvariable}
 
 \begin{center}
-
-\includegraphics[width=1\textwidth,keepaspectratio]{figure/sublime_1.png}
-\end{center}
+\vspace{-5mm}
+\textbf{How do I turn THIS into a PNG file}?
 \vfill
-% \parbox{\linewidth}{\tiny All images provided by Alex Fry of Psycle
-% \\Property of Ubisoft Hieroglyphics Initiative Workbench}
+\includegraphics[width=0.8\textwidth,keepaspectratio]{figure/sublime_1.png}
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\label{\secvariable}
+
+\begin{center}
+\textbf{Using THIS R Script}:
+\includegraphics[width=1\textwidth,keepaspectratio]{figure/EXCRACT.PNG}
+\end{center}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mysection{slab}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}\label{\secvariable}
-
-\begin{center}
-\includegraphics[width=1\textwidth,keepaspectratio]{figure/EXCRACT.PNG}
-\end{center}
-
-\end{frame}
-
-
-
-% \begin{frame}\label{slabtable}
-% \begin{columns}
-% \begin{column}[t]{1.1\textwidth}
-% \hyperlink{slab}{\beamerbutton{\dots back to figure}}\\
-% Morbi mauris turpis, ornare eu elit quis, pulvinar bibendum sapien. Nulla vel justo id dui aliquam blandit. Etiam pellentesque ac nisl ut suscipit. 
-
-
-% %Table from original template.
-
-% \vspace{0.3cm}
-% \end{column}
-% \end{columns}
-% \usebeamerfont{bodytext}
-%  \begin{tabular}{c|rr@{}c@{}rrrrr}
-%  \setlength{\tabcolsep}{6mm}
-%   & Time & \multicolumn{3}{r}{Volume} & Range & Length & Area & Depth \\
-%   & [\si{\second}] & \multicolumn{3}{r}{[\si{\cubic\metre}]} & [\si{\metre}] &
-% [\si{\metre}] & [\si{\square\metre}] & [\si{\metre}]\\\hline
-
-%   \textbf{Avalanche~\#0019} & & $V_t$ &=& 29500 & & & 40411 & 0.73 \\
-%   initial release &3.4& $V_0$ &=& 2188 & 2506 &  62 &  1400 & 1.56 \\
-%   slab \#1 & 17.2    &  $V_1$ &=&  521 & 2356 &  39 &   701 & 0.74 \\
-%   slab \#2 & 23.4    &  $V_2$ &=& 3503 & 2284 &  83 &  2753 & 1.28 \\
-%   slab \#3 & 20--25$^*$ &  $V_3$ &=& 3345 & 2150 &  99 &  1880 & 1.78 \\
-%   slab \#4 & 38.7    &  $V_4$ &=& 4276 & 1945 & 153 &  3657 & 1.17 \\
-%   \\
-%   \textbf{Avalanche~\#0017} & &  $V_t$ &=& 78500 & & & 82632 & 0.95\\
-%   initial release&5.2&  $V_0$ &=& 15233 & 2402 & 191 & 12974 & 1.17\\
-%   slab \#5 & 12.2    &  $V_5$ &=&  7620 & 2219 & 202 &  6043 & 1.26 \\
-%   slab \#6 & 14.1    &  $V_6$ &=&  5868 & 2215 & 166 &  5851 & 1.01 \\
-%   slab \#7 & 25.6    &  $V_7$ &=&  6307 & 1982 &  95 &  3320 & 1.90 \\
-%   slab \#8 & 15--25$^*$ &  $V_8$ &=& 10663 & 1947 & 253 &  5037 & 2.12
-%  \end{tabular}
- 
-% \vspace{0.2cm}
-%  \textbf{Table:} Release time, Volume, Location and size parameters of all
-% identified slabs.
-
-% \end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mysection{minor}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}\label{\secvariable}
 
 \begin{center}
-\includegraphics[width=0.7\textwidth,keepaspectratio]{figure/GardinerCodes.PNG}
+\textbf{What am I comparing?}
+\\ \includegraphics[width=0.65\textwidth,keepaspectratio]{figure/GardinerCodes.PNG}
 \end{center}
 
 \end{frame}
@@ -308,7 +274,8 @@ figure/workbench_1.PNG}
 \begin{frame}\label{\secvariable}
 
 \begin{center}
-\includegraphics[width=0.7\textwidth,keepaspectratio]{figure/matches.PNG}
+Here you can see the correct matches between the two lists of Gardiner Signs:
+\includegraphics[width=0.65\textwidth,keepaspectratio]{figure/matches.PNG}
 \end{center}
 
 \end{frame}
@@ -320,7 +287,8 @@ figure/workbench_1.PNG}
 \begin{frame}\label{\secvariable}
 
 \begin{center}
-\includegraphics[width=0.7\textwidth,keepaspectratio]{figure/almost.PNG}
+And here you can see the matches it \textit{almost} got correct...
+\includegraphics[width=0.65\textwidth,keepaspectratio]{figure/almost.PNG}
 \end{center}
 
 \end{frame}
@@ -332,9 +300,12 @@ figure/workbench_1.PNG}
 \begin{frame}\label{\secvariable}
 
 \begin{center}
-\includegraphics[width=0.7\textwidth,keepaspectratio]{figure/matches2.PNG}
-\end{center}
+You can view a section of my R script which compares the lists of Gardiner Signs below:
+\includegraphics[width=0.7\textwidth,keepaspectratio]{figure/codecode.PNG}
 \vfill
+\tiny (It's too long to fit on this page!)
+
+\end{center}
 
 \end{frame}
 
@@ -345,25 +316,13 @@ figure/workbench_1.PNG}
 \begin{frame}\label{\secvariable}
 
 \begin{center}
-\includegraphics[width=0.7\textwidth,keepaspectratio]{figure/outoutrun.PNG}
+Running this script gives output that looks like this:
+\includegraphics[width=0.7\textwidth,keepaspectratio]{figure/output.PNG}
+You can see that the script returned a percentage of \textbf{25}.
+\\The auto-classify tool \textbf{correctly} identified \textbf{3} out of the \textbf{12} selected hieroglyphs.
 \end{center}
 
 \end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{frame}\label{\secvariable}
-
-% %
-% \includegraphics[width=0.45\textwidth,height=1\textheight,keepaspectratio]{%
-% figure/figure7.png}\hspace{.05\textwidth}
-% \includegraphics[width=0.45\textwidth,height=1\textheight,keepaspectratio]{%
-% figure/figure7.png}
-
-% Maecenas nec accumsan nunc. Aenean pretium nulla augue, sit amet volutpat leo consectetur tincidunt. Donec scelerisque erat a semper lacinia. Pellentesque aliquet libero neque, ac consequat metus feugiat eget. Etiam aliquam maximus libero, quis hendrerit ex mattis vitae. Duis sed metus ultrices, hendrerit sapien vitae, fringilla nunc. 
-
-% \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mysection{conclusion}
@@ -372,9 +331,17 @@ figure/workbench_1.PNG}
 \begin{frame}\label{\secvariable}
 
 \begin{center}
-\includegraphics[width=1.0\textwidth,keepaspectratio]{figure/translations.PNG}
-\end{center}
+
+\textbf{So what's next?}
 \vfill
+\includegraphics[width=1.0\textwidth,keepaspectratio]{figure/translations_2.PNG}
+\vfill
+Continue developing codes that test various aspects of the program.
+\\Let's translate some texts and see how we go!
+\vfill
+\includegraphics[width=0.35\textwidth,keepaspectratio]{figure/LOGOS.PNG}
+
+\end{center}
 
 \end{frame}
 
