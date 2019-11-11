@@ -30,6 +30,18 @@
 \usepackage[UKenglish]{babel} %https://tex.stackexchange.com/a/27743 
 \usepackage[pangram]{blindtext} % https://tex.stackexchange.com/a/48411
 
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+ 
+\urlstyle{same}
+
+
 %\usepackage{parskip} % from https://tex.stackexchange.com/q/11622
 %\setlength{\parskip}{12pt} 
 
@@ -196,15 +208,18 @@ I developed a script that can extract the image files in someone else's project 
 \mysection{radar}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}\label{\secvariable}
+\begin{frame}
+\label{\secvariable}
 
 \begin{center}
+\vfill
 \textbf{The Hieroglyphics Initiative Workbench}
 \vspace{0.8cm}
 \includegraphics[width=0.85\textwidth,keepaspectratio]{figure/workbench_2.PNG}
+\vfill
 \end{center}
-\vspace*{-\baselineskip}
-\tiny Images provided by Alex Fry of Psycle
+\tiny
+\\Images provided by Alex Fry of Psycle
 \\Property of Ubisoft Hieroglyphics Initiative Workbench
 \vfill
 
@@ -318,6 +333,7 @@ You can view a section of my R script which compares the lists of Gardiner Signs
 \begin{center}
 Running this script gives output that looks like this:
 \includegraphics[width=0.7\textwidth,keepaspectratio]{figure/output.PNG}
+
 You can see that the script returned a percentage of \textbf{25}.
 \\The auto-classify tool \textbf{correctly} identified \textbf{3} out of the \textbf{12} selected hieroglyphs.
 \end{center}
@@ -338,6 +354,7 @@ You can see that the script returned a percentage of \textbf{25}.
 \vfill
 Continue developing codes that test various aspects of the program.
 \\Let's translate some texts and see how we go!
+\\ \href{https://hieroglyphicsinitiative.ubisoft.com/en-GB/home}{See for yourself!}
 \vfill
 \includegraphics[width=0.35\textwidth,keepaspectratio]{figure/LOGOS.PNG}
 
